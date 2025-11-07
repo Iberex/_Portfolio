@@ -7,9 +7,24 @@ import Workshops from "../components/Workshops.astro";
 
 ---
 
-<Base title="Home Page">
+<Base title="Home">
+  <!-- Portfolio Hero: keep the existing Hero component for the look -->
   <Hero />
-  <Team />
-  <Workshops />
-  <Foundations />
+
+  <!-- Minimal portfolio sections - edit these in the components or directly here -->
+  <section class="container max-w-3xl mx-auto py-12">
+    <h2 class="text-2xl font-bold mb-4">About me</h2>
+    <p class="text-lg leading-relaxed">Hoi — ik ben <strong>Jouw Naam</strong>. Dit is mijn persoonlijke portfolio gemaakt met deze opmaak. Vervang dit stuk tekst met je eigen introductie, vaardigheden en contactinformatie.</p>
+
+    <h3 class="mt-8 text-xl font-semibold">Projects</h3>
+    <ul class="mt-3 space-y-2">
+      <li>Project A — korte beschrijving</li>
+      <li>Project B — korte beschrijving</li>
+      <li>Project C — korte beschrijving</li>
+    </ul>
+
+    <h3 class="mt-8 text-xl font-semibold">Contact</h3>
+    <p class="mt-2">Email: <a href="mailto:je@voorbeeld.com">je@voorbeeld.com</a></p>
+  </section>
+
 </Base>
